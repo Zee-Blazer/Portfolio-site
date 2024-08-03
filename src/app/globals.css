@@ -2,4 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.header_line_height
+{
+  line-height: 52px;
+}
