@@ -18,6 +18,11 @@
   /* margin-left: 14%; */
 }
 
+.blog_bg
+{
+  background-color: #EDF7FA;
+}
+
 @media only screen and (max-width: 600px)
 {
   .align_head

@@ -1,5 +1,5 @@
 
-import Intro from "./Components/intro";
+import Intro from "./Components/intro.component";
 
 export default function Home() {
   return (
