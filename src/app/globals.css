@@ -22,7 +22,15 @@
 {
   .align_head
   {
+    margin: 33px;
     display: flex;
     flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .align_head h1
+  {
+    margin-top: 33px;
+    font-size: 28px;
   }
 }

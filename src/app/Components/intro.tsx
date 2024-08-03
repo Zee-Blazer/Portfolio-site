@@ -8,7 +8,7 @@ export default function Intro() {
         <div className="align_head mt-8 md:mx-36 md:m-40 md:flex ">
             <div className="md:max-w-xl">
                 <h1
-                    className="text-center md:text-4xl md:font-bold header_line_height md:tracking-wider"
+                    className="md:text-4xl font-bold md:header_line_height tracking-wide"
                 >Hi, I am Ganiyu Bolaji<br />Software Engineer(MERN Stack)</h1>
                 <p className="text-base mt-3.5">
                     Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
