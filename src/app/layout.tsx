@@ -6,6 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Header Component
 import Header from "./header";
+import Footer from "./footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
