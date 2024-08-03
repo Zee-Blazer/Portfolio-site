@@ -23,6 +23,11 @@
   background-color: #EDF7FA;
 }
 
+.recent_txt_color
+{
+  color: #21243D;
+}
+
 @media only screen and (max-width: 600px)
 {
   .align_head
