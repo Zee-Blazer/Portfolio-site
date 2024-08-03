@@ -6,3 +6,23 @@
 {
   line-height: 52px;
 }
+
+.rounder_border_50
+{
+  border-radius: 50%;
+}
+
+.margin_space_around
+{
+  margin: 4px auto;
+  /* margin-left: 14%; */
+}
+
+@media only screen and (max-width: 600px)
+{
+  .align_head
+  {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
