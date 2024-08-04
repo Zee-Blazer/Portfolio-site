@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 
+import Link from 'next/link';
+
 export default function Header() {
 
     const [isClicked, setIsClicked] = useState(false);
@@ -9,27 +11,33 @@ export default function Header() {
     const toggleNavBar = (): void => setIsClicked(!isClicked);
 
     const navItems = [
-        { title: "Works", link: "" },
-        { title: "Blog", link: "" },
-        { title: "Contact", link: "" }
+        { title: "Works", link: "#" },
+        { title: "Blog", link: "blog" },
+        { title: "Contact", link: "#" }
     ]
 
     return (
         <>
-            <nav className="bg-black">
+            <nav className="sticky sticky_nav_bar bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className="flex items-center">
                             <div className="flex-shrink-0">
-                                <a href="/" className="text-white">Ganiyu Bolaji</a>
+                                <Link href="/" className="font-bold">
+                                    Ganiyu Bolaji
+                                </Link>
                             </div>
                         </div>
                         <div className="hidden md:block">
                             <div className="ml-4 flex items-center space-x-4">
                                 { navItems.map( (item, key) => (
-                                    <a href="#" key={key} className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+                                    <Link 
+                                        href={ item.link } 
+                                        key={key} 
+                                        className="hover:bg-black hover:text-white rounded-lg p-2"
+                                    >
                                         { item.title }
-                                    </a>
+                                    </Link>
                                 ) ) }
                             </div>
                         </div>
@@ -85,9 +93,13 @@ export default function Header() {
                         <div className='md:hidden'>
                             <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                             { navItems.map( (item, key) => (
-                                <a href="#" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                                <Link 
+                                    href={ item.link } 
+                                    key={ key } 
+                                    className="block hover:bg-black hover:text-white rounded-lg p-2"
+                                >
                                     { item.title }
-                                </a>
+                                </Link>
                             ) ) }
                             </div>
                         </div>

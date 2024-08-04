@@ -33,6 +33,12 @@
   border-color: #E0E0E0;
 }
 
+.sticky_nav_bar
+{
+  top: 0;
+  left: 0;
+}
+
 .recent_txt_color
 {
   color: #21243D;

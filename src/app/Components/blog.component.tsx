@@ -1,5 +1,7 @@
 
-import BlogContent from "./blog.details.component"
+import Link from 'next/link';
+
+import BlogContent from "./blog.details.component";
 
 export default function Blog() {
 
@@ -10,7 +12,9 @@ export default function Blog() {
 
                 <div className="md:flex justify-between md:mx-3">
                     <h4 className="text-lg text-center recent_txt_color md:text-xl">Recent Posts</h4>
-                    <p className="hidden text-base md:block text-blue-500 cursor-pointer">View all</p>
+                    <p className="hidden text-base md:block text-blue-500 cursor-pointer">
+                        <Link href="blog">View all</Link>
+                    </p>
                 </div>
 
                 <div className="md:flex">
