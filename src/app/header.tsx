@@ -19,8 +19,6 @@ export default function Header() {
         { title: "Contact", link: "#contact" }
     ];
 
-    console.log(pathname)
-
     return (
         <>
             <nav className="sticky sticky_nav_bar bg-white">
