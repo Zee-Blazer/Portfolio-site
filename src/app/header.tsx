@@ -14,7 +14,7 @@ export default function Header() {
     const pathname = usePathname();
 
     const navItems = [
-        { title: "Works", link: "#" },
+        { title: "Works", link: "/works" },
         { title: "Blog", link: "/blog" },
         { title: "Contact", link: "#contact" }
     ];

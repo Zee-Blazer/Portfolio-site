@@ -39,11 +39,6 @@
   left: 0;
 }
 
-.blog_title_space_left
-{
-  margin-left: 244px;
-}
-
 .recent_txt_color
 {
   color: #21243D;
@@ -63,5 +58,13 @@
   {
     margin-top: 33px;
     font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px)
+{
+  .blog_title_space_left
+  {
+    margin-left: 244px;
   }
 }
