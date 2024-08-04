@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
 
@@ -10,11 +11,15 @@ export default function Header() {
 
     const toggleNavBar = (): void => setIsClicked(!isClicked);
 
+    const pathname = usePathname();
+
     const navItems = [
         { title: "Works", link: "#" },
-        { title: "Blog", link: "blog" },
-        { title: "Contact", link: "#" }
-    ]
+        { title: "Blog", link: "/blog" },
+        { title: "Contact", link: "#contact" }
+    ];
+
+    console.log(pathname)
 
     return (
         <>
@@ -34,7 +39,10 @@ export default function Header() {
                                     <Link 
                                         href={ item.link } 
                                         key={key} 
-                                        className="hover:bg-black hover:text-white rounded-lg p-2"
+                                        className={
+                                            `hover:bg-black hover:text-white rounded-lg p-2 
+                                            ${pathname == item.link ? "bg-black text-white px-2": ""}`
+                                        }
                                     >
                                         { item.title }
                                     </Link>
@@ -43,9 +51,9 @@ export default function Header() {
                         </div>
                         <div className="md:hidden flex items-center">
                             <button
-                                className="inline-flex items-center justify-center p-2 rounded-md text-white 
-                                hover:text-white focus:outline-none focus:ring-2 focus:ring-inset 
-                                focus:ring-white"
+                                className="inline-flex items-center justify-center p-2 rounded-md text-black 
+                                hover:text-black focus:outline-none focus:ring-2 focus:ring-inset 
+                                focus:ring-black"
                                 onClick={ toggleNavBar }
                             >
                                 {
@@ -90,13 +98,13 @@ export default function Header() {
 
                 {
                     isClicked && (
-                        <div className='md:hidden'>
+                        <div className='bg-black md:hidden'>
                             <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3'>
                             { navItems.map( (item, key) => (
                                 <Link 
                                     href={ item.link } 
                                     key={ key } 
-                                    className="block hover:bg-black hover:text-white rounded-lg p-2"
+                                    className="block text-white hover:bg-white hover:text-black rounded-lg p-2"
                                 >
                                     { item.title }
                                 </Link>

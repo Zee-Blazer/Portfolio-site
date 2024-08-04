@@ -7,7 +7,7 @@ import { BsLinkedin } from "react-icons/bs";
 export default function Footer() {
     
     return (
-        <div className="mt-16 p-6">
+        <div className="mt-16 p-6" id="contact">
             <div className="flex text-center justify-center">
                 <FaSquareFacebook className="text-2xl mx-2 cursor-pointer hover:text-blue-700" />
                 <FaInstagram className="text-2xl mx-2 cursor-pointer hover:text-pink-600" />
