@@ -23,6 +23,16 @@
   background-color: #EDF7FA;
 }
 
+.date_bg
+{
+  background-color: #142850;
+}
+
+.border_btm_color
+{
+  border-color: #E0E0E0;
+}
+
 .recent_txt_color
 {
   color: #21243D;
