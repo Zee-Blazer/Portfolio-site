@@ -5,7 +5,7 @@ import img from "../Images/project.png";
 export default function Project() {
 
     return (
-        <>
+        <div className="mx-5 mt-4">
             <h4>Featured works</h4>
 
             <div>
@@ -26,6 +26,6 @@ export default function Project() {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
