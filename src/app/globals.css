@@ -39,6 +39,11 @@
   left: 0;
 }
 
+.blog_title_space_left
+{
+  margin-left: 244px;
+}
+
 .recent_txt_color
 {
   color: #21243D;

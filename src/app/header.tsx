@@ -104,6 +104,7 @@ export default function Header() {
                                 <Link 
                                     href={ item.link } 
                                     key={ key } 
+                                    onClick={ () => setIsClicked(false) }
                                     className="block text-white hover:bg-white hover:text-black rounded-lg p-2"
                                 >
                                     { item.title }
