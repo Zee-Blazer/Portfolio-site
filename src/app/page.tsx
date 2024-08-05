@@ -40,25 +40,17 @@ export default function Home() {
       </div>
 
       <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 72 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 1.0, delay: 1.25 }}
+        initial={{ opacity: 0, y: 72 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: .8, delay: .85 }}
       >
         <Blog />
       </motion.div>
 
       <motion.div
-        variants={{
-          hidden: { opacity: 0, y: 72 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        initial="hidden"
-        animate={ mainControls }
-        transition={{ duration: 1.8, delay: 1.85 }}
+        initial={{ opacity: 0, y: 72 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: .8, delay: .85 }}
       >
         <Project />
       </motion.div>
